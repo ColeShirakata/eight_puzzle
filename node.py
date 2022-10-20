@@ -7,7 +7,7 @@ class node:
         self.left = None
         self.right = None
         self.puzzle = puzzle
-        self.prev_move = "left"
+        self.prev_move = "mid"
 
     def __copy__(self):
         return type(self)(self.puzzle)
