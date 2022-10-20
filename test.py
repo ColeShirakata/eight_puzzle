@@ -72,10 +72,7 @@ class node:
         self.left = None
         self.right = None
         self.puzzle = puzzle
-        self.prev_move = "mid"
-
-    def __copy__(self):
-        return self.puzzle
+        self.prev_move = None
 
 
     def print(self):
@@ -84,8 +81,20 @@ class node:
 
 
 if __name__ == "__main__":
-    
-    
+
+    print("Welcome to my Eight-Puzzle solver!\n")
+    print("Would you like to create your own puzzle (1) or choose a random puzzle (2)?\n")
+    user_input = int(input())
+    print("\n")
+
+    if user_input == 1:
+        r1, r2, r3 = input("Row 1: ")
+        r4, r5, r6 = input("Row 2: ")
+        r7, r8, r9 = input("Row 3: ")
+
+        temp_puzzle = [[int(r1), int(r2), int(r3)], [int(r4), int(r5), int(r6)], [int(r7), int(r8), int(r9)]]
+        user_puzzle = temp_puzzle
+
 
     nd = node(user_puzzle)
     expand(nd)
