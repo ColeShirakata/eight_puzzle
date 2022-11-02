@@ -5,3 +5,7 @@ https://www.programiz.com/python-programming/shallow-deep-copy
 https://www.techiedelight.com/sort-list-of-objects-python/
 
 	-Sort list of objects
+
+https://www.geeksforgeeks.org/switch-case-in-python-replacement/
+
+	-For using match (switch) statements
